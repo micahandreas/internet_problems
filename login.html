@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Micah Torres</title>
+    <script src="login.js"></script>
+</head>
+<body>
+    <form id="loginForm" action="index.html" onsubmit="event.preventDefault()">
+        <div class="input-container">
+            <input type="text" name="username" id="loginUsername" required />
+            <label class="floating-label" for="loginUsername">Username</label>
+        </div>
+        <div class="input-container">
+            <input class="sign-in-password" type="password" name="password" id="loginPassword" autocomplete="off" required />
+            <label class="floating-label" for="loginPassword">Password</label>
+            <span class="input-icon password-toggler"></span>
+            <a class="forgotten-password" href="forgot-password" tabindex="-1">Forgot password?</a>
+        </div>
+        <input type="hidden" id="crumb" name="crumb" value="N_7XBGwPpOT7O53lvvorFEvoFhwIW2m97tMInVWr2zW" />
+        <button class="form-submit" id="loginSubmit" type="submit" onclick="login()">
+            <span>Sign In</span>
+        </button>
+    </form>
+    <p id="error-login" style="color:#FF0000;"></p>
+
+    <br>
+    <a href="index.html"><button>⬅🏠Back to Homepage</button></a>
+</body>
+</html>
